@@ -1,0 +1,205 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: darkgrey;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  bottom: 90px;
+  color: white;
+  left: 39%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 50px;
+  left: 47%;
+}
+
+.button {
+  padding: 9px 28px;
+  background: black;
+  opacity: 0.7;
+  border-radius: 30px;
+  color: white;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+}
+
+.parent-container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.list {
+  margin-left: -40px;
+  list-style: none;
+  color: yellow;
+}
+
+.list li::before {
+  content: "\2022";
+  color: yellow;
+  margin-right: 5px;
+}
+
+.best-deal-container {
+  width: 100%;
+}
+
+.best-deal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.best-deals-items {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer {
+  color: white;
+  padding: 300px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.best-deals-items-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.best-deals-items-price {
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  background: red;
+  left: 30%;
+  top: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.best-deal-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.best-deal-button {
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  background: grey;
+  padding: 10px 30px;
+}
+
+.new-released-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.new-released-row {
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  background: grey;
+  padding: 10px 30px;
+}
+
+.greater-button {
+  outline: 0;
+  border: 0;
+  padding: 30px 10px;
+  background: grey;
+  opacity: 0.7;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 70px;
+  right: 35px;
+  display: none;
+}
+
+.footer {
+  margin-bottom: -90px;
+}
+
+@media screen and (max-width: 680px) {
+  .text {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .button-container {
+    left: 40%;
+    bottom: 20%;
+  }
+  .best-deals-items-price {
+    left: 35%;
+  }
+
+  .try-new {
+    left: 19%;
+  }
+
+  .pods-container {
+    display: none;
+  }
+
+  .greater-button {
+    display: block;
+  }
+
+  .disposable h1 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .disposable p {
+    font-size: small;
+  }
+
+  .disposable-item img {
+    margin-top: 10px;
+  }
+
+  .disposable-text {
+    font-size: small;
+  }
+
+  .footer {
+    margin-top: -50px;
+  }
+}
